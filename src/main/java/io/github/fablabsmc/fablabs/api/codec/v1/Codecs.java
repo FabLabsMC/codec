@@ -15,18 +15,27 @@
  *  CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-package io.github.fablabsmc.fablabs.api.blueprint.v1;
+package io.github.fablabsmc.fablabs.api.codec.v1;
 
+import java.util.stream.Stream;
+
+import com.mojang.serialization.DataResult;
+import com.mojang.serialization.DynamicOps;
+import com.mojang.serialization.MapCodec;
+import com.mojang.serialization.MapLike;
+import com.mojang.serialization.RecordBuilder;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
 import net.fabricmc.api.ModInitializer;
 
-public class Blueprint implements ModInitializer {
-	public static final String MODID = "blueprint";
+public class Codecs implements ModInitializer {
+	public static final String ID = "codec";
 
-	public static final Logger logger = LogManager.getLogger(MODID);
+	public static final Logger LOGGER = LogManager.getLogger(ID);
 
 	@Override
-	public void onInitialize() { }
+	public void onInitialize() { 
+		
+	}
 }
